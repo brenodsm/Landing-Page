@@ -16,7 +16,7 @@ header {
   align-items: center;
 }
 
-#menu{
+#menu {
   display: none;
 }
 
@@ -25,7 +25,7 @@ header {
   line-height: 10px;
 }
 
-header h1 {
+header h1 { 
   font-weight: 200;
 }
 
