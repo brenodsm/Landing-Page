@@ -79,6 +79,7 @@ p {
 img {
   width: 580px;
 }
+
 form {
   display: flex;
   flex-flow: column;
@@ -102,6 +103,6 @@ form > input[type="submit"] {
   font-weight: bold;
 }
 
-form > input[type="submit"]:hover{
+form > input[type="submit"]:hover {
   cursor: pointer;
 }
