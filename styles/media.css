@@ -1,6 +1,35 @@
+@media screen and (min-width: 1025px) and (max-width: 1144px) {
+  img {
+    width: 460px;
+  }
+}
+
+@media screen and (min-width: 761px) and (max-width: 1024px) {
+  main h2 > span {
+    font-size: 46px;
+    line-height: 45px;
+  }
+
+  main h2 {
+    font-size: 46px;
+  }
+
+  #inscreva-se {
+    display: flex;
+  }
+
+  img {
+    width: 400px;
+  }
+}
+
 @media screen and (max-width: 760px) {
   header {
     flex-flow: column;
+  }
+
+  #title {
+    text-align: center;
   }
 
   nav ul {
@@ -13,10 +42,32 @@
   }
 
   main h2 {
-    font-size: 38px;
+    font-size: clamp(16px, 38px, 38px);
+    line-height: 10px;
   }
 
   img {
     display: none;
+  }
+}
+
+@media screen and (max-width: 405px) {
+  nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+  }
+  #menu {
+    display: block;
+    cursor: pointer;
+  }
+
+  nav ul li {
+    display: none;
+  }
+
+  main h2 {
+    font-size: clamp(16px, 30px, 30px);
   }
 }
