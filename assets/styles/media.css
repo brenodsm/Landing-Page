@@ -3,7 +3,7 @@
     width: 460px;
   }
 }
-
+/* tablets */
 @media screen and (min-width: 761px) and (max-width: 1024px) {
   main h2 > span {
     font-size: 46px;
@@ -23,6 +23,7 @@
   }
 }
 
+/* celulares médios (Navbar) */
 @media screen and (max-width: 760px) {
   header {
     flex-flow: column;
@@ -32,11 +33,20 @@
     text-align: center;
   }
 
-  nav ul {
-    flex-flow: wrap;
-    justify-content: center;
+  nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+  }
+  #menu {
+    display: block;
+    cursor: pointer;
   }
 
+  nav ul li {
+    display: none;
+  }
   main {
     flex-flow: column;
   }
@@ -52,21 +62,6 @@
 }
 
 @media screen and (max-width: 405px) {
-  nav {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-  }
-  #menu {
-    display: block;
-    cursor: pointer;
-  }
-
-  nav ul li {
-    display: none;
-  }
-
   main h2 {
     font-size: clamp(16px, 30px, 30px);
   }

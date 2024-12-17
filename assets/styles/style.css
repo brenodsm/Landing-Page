@@ -17,6 +17,9 @@ header {
 }
 
 #menu {
+  position: fixed;
+  right: 20px;
+  top: 60px;
   display: none;
 }
 
@@ -25,7 +28,7 @@ header {
   line-height: 10px;
 }
 
-header h1 { 
+header h1 {
   font-weight: 200;
 }
 
