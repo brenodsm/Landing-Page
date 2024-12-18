@@ -8,7 +8,7 @@ function activeMenu() {
   nav.classList.toggle("active");
 }
 
-body.addEventListener("click", closeMenuOnOutsideClick);
+document.addEventListener("click", closeMenuOnOutsideClick);
 
 function closeMenuOnOutsideClick(event) {
   // Verifica se o clique NÃO foi no nav ou em seus filhos e também fora da navbar
