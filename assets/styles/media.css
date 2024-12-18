@@ -98,6 +98,7 @@
   #inscreva-se {
     display: block;
     border: 0;
+    margin-bottom: 8px;
   }
 
   nav > ul > li #inscreva-se:hover {
