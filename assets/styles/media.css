@@ -45,6 +45,7 @@
     display: block;
     cursor: pointer;
     padding: 20px;
+    margin-bottom: 5px;
   }
 
   nav ul {
@@ -73,7 +74,6 @@
 
   nav a {
     font-size: 16px;
-    margin-right: 5px;
     opacity: 0;
   }
 
@@ -83,6 +83,16 @@
 
   nav.active :nth-child(1) {
     transition: 0.2s;
+  }
+
+  .nav-list li:nth-child(2) a {
+    transition: 0.5s 0.3s;
+  }
+  .nav-list li:nth-child(3) a {
+    transition: 0.5s 0.4s;
+  }
+  .nav-list li:nth-child(4) a {
+    transition: 0.5s 0.5s;
   }
 
   #inscreva-se {
