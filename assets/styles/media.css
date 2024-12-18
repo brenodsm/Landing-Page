@@ -39,14 +39,62 @@
     align-items: center;
     width: 100%;
   }
-  #menu {
+
+  .mobile-menu {
+    z-index: 1;
     display: block;
     cursor: pointer;
+    padding: 20px;
   }
 
-  nav ul li {
-    display: none;
+  nav ul {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 50vw;
+    height: 100vh;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0;
+    clip-path: circle(100px at 90% -15%);
+    transition: 0.3s linear;
+    pointer-events: all;
+    background-color: rgb(34, 34, 34);
   }
+
+  nav.active ul {
+    clip-path: circle(1500px at 90% -15%);
+  }
+
+  nav li {
+    padding-top: 10px;
+  }
+
+  nav a {
+    font-size: 20px;
+    opacity: 0;
+  }
+
+  nav.active a {
+    opacity: 1;
+  }
+
+  nav.active :nth-child(1) {
+    transition: 0.2s;
+  }
+
+  #inscreva-se {
+    display: block;
+    border: 0;
+  }
+
+  nav > ul > li #inscreva-se:hover {
+    background-color: inherit;
+    color: rgb(132, 14, 201);
+    transition: 0.3s all;
+  }
+
   main {
     flex-flow: column;
   }

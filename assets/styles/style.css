@@ -16,11 +16,18 @@ header {
   align-items: center;
 }
 
-#menu {
+.mobile-menu {
   position: fixed;
-  right: 20px;
-  top: 60px;
+  right: 10px;
+  top: 10px;
   display: none;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  margin: 8px;
+  background-color: white;
 }
 
 #title {
